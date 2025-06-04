@@ -700,7 +700,7 @@ func (cc *ClientConductor) OnErrorResponse(corrID int64, errorCode int32, errorM
 		}
 	}
 
-	for _, subDef := range cc.pubs {
+	for _, subDef := range cc.subs {
 		if subDef.regID == corrID {
 			subDef.status = RegistrationStatus.ErroredMediaDriver
 			subDef.errorCode = errorCode
