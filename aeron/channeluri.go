@@ -130,7 +130,7 @@ func (uri *ChannelUri) SetPrefix(prefix string) {
 	uri.prefix = prefix
 }
 
-func (uri ChannelUri) SetMedia(media string) {
+func (uri *ChannelUri) SetMedia(media string) {
 	uri.media = media
 }
 
